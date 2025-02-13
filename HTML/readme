@@ -1,0 +1,12 @@
+新建项目        django-admin startproject 项目名
+新建数据库        python manage.py migrate
+新建app         python manage.py startapp app名
+修改模型
+激活模型        在settings.py的INSTALLED_APPS中添加app名
+生成迁移文件    python manage.py makemigrations
+迁移            python manage.py migrate
+管理网站-创建管理员        python manage.py createsuperuser
+管理网站-向管理网站注册模型        在app的admin.py中注册模型(from .models import 模型名) (admin.site.register(模型名))
+创建网页-定义URL
+创建网页-定义视图(视图函数从models中获取数据，并将数据传递给模板)
+创建网页-定义模板
